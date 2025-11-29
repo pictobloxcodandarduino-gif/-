@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="fa">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>السلام علی الحسین — عاشورا</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+<style>
+:root{
+  --bg:#070707;
+  --panel:#0b0b0c;
+  --gloss:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  --red:#c31a1a;
+  --dark-red:#5b0f0f;
+  --gold:#d6b24a;
+  --text:#e9e7e6;
+  --muted:#bdb7b5;
+  --maxw:1100px;
+  --radius:14px;
+}
+/* Basic reset */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Vazirmatn', Tahoma, Arial, sans-serif;
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(255,0,0,0.05), transparent 5%),
+    linear-gradient(180deg, #1a0404 0%, #070707 30%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  direction:rtl;
+  padding-top:6px;
+  line-height:1.9;
+}
+/* Thin neon red bar */
+.topline{
+  position:fixed;
+  top:0; left:0; right:0;
+  height:4px;
+  background:linear-gradient(90deg,var(--red), #8e0000);
+  z-index:9999;
+  box-shadow:0 2px 8px rgba(195,26,26,0.16);
+}
+/* Container */
+.container{
+  max-width:var(--maxw);
+  margin:34px auto 60px;
+  padding:30px 10px 40px 10px;
+}
+/* Header */
+.header{
+  text-align:center;
+  padding:36px 20px;
+  margin-bottom:25px;
+  border-radius:24px;
+  background:
+    radial-gradient(500px 150px at 50% 48%, rgba(214,178,74,0.09), transparent 30%),
+    linear-gradient(180deg, rgba(198,50,50,0.07), rgba(255,255,255,0.00)),
+    rgba(24,4,4,0.25);
+  border:1px solid rgba(255,255,255,0.04);
+  position:relative;
+  overflow:hidden;
+  box-shadow: 0 0 60px #98191980,0 2px 0 #d6b24a17;
+}
+.header h1{
+  margin:0;
+  font-size:48px;
+  letter-spacing:2px;
+  color:var(--red);
+  font-weight:900;
+  text-shadow:
+    0 0 44px rgba(195,26,26,0.28),
+    0 2px 2px rgba(0,0,0,0.58);
+  display:inline-block;
+  padding:18px 26px;
+  border-radius:16px;
+  background: linear-gradient(90deg,#390404 0%,#5b0f0f 100%);
+  box-shadow:0 0 40px #c31a1a44;
+  border:2px solid #c31a1a60;
+}
+.header .sub{
+  display:block;
+  margin-top:16px;
+  color:#d6b24a;
+  font-weight:700;
+  font-size:20px;
+  text-shadow:0 0 12px #d6b24a55;
+  letter-spacing:1px;
+}
+/* content panel */
+.content{
+  display:block;
+}
+/* glossy paragraph boxes */
+.para{
+  background:linear-gradient(180deg,rgba(255,255,255,0.012),rgba(255,255,255,0.009),rgba(198,50,50,0.04));
+  border-radius:16px;
+  padding:24px;
+  margin-bottom:18px;
+  border:1.5px solid #d6b24a80;
+  box-shadow:0 6px 22px #42040494, 0 1px 0 #d6b24a05;
+  position:relative;
+  opacity:0;
+  transform:translateY(24px);
+  transition:all .7s cubic-bezier(.16,.9,.3,1);
+}
+.para h3{
+  margin:0 0 12px 0;
+  color:#d6b24a;
+  font-size:20px;
+  font-weight:900;
+  text-shadow:0 2px 13px #d6b24a60;
+}
+
+/* Hadith, quote, poetry accent */
+.special{
+  display:block;
+  margin:18px auto 0;
+  padding:14px 16px;
+  border-radius:10px;
+  background:rgba(198,50,50,0.11);
+  color:#d6b24a;
+  border:1.5px solid #d6b24a33;
+  font-weight:900;
+  font-size:15px;
+  text-align:center;
+  letter-spacing:1px;
+  box-shadow:0 0 24px #d6b24a33;
+}
+
+/* Footer */
+.footer{
+  margin-top:38px;
+  padding:26px;
+  text-align:center;
+  font-weight:900;
+  font-size:28px;
+  color:var(--gold);
+  text-shadow:0 0 34px #c31a1a47,0 0 40px #d6b24a92;
+  letter-spacing:1px;
+  border-radius:14px;
+  background:linear-gradient(90deg,#390404 0%,#5b0f0f 100%);
+  box-shadow:0 0 24px #39040435;
+}
+@media(max-width:600px){
+  .container{padding:8px;}
+  .header h1{font-size:28px;padding:10px;}
+  .header .sub{font-size:13px;}
+  .para{padding:10px;}
+  .para h3{font-size:15px;}
+  .special{font-size:12px;}
+  .footer{font-size:17px;}
+}
+/* fade-in effect JS toggles .visible */
+.visible{
+  opacity:1 !important;
+  transform:translateY(0) !important;
+}
+</style>
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+  <main class="container" role="main">
+    <header class="header" role="banner" aria-labelledby="main-title">
+      <h1 id="main-title">السلام علی الحسین</h1>
+      <span class="sub">یاد عاشورا ـ نقطه پرواز حقیقت و آزادگی</span>
+    </header>
+    <article class="content" aria-label="پاراگراف‌های عاشورا">
+<!-- 25 پاراگراف خفن و ادبی -->
+<section class="para fade">
+  <h3>حماسه‌ای فراتر از تاریخ</h3>
+  <p>عاشورا تنها یک رخداد نیست؛ امتداد جریانی است که روح انسان را تا ابد از بندهای ظلم آزاد می‌کند.</p>
+  <span class="special">«کل یوم عاشورا و کل أرض کربلا»</span>
+</section>
+<section class="para fade">
+  <h3>خون حقیقت بر زمین کربلا</h3>
+  <p>آن روز در کربلا، گوهر حقیقت با فریاد «هیهات منا الذلة» بر تاریک‌ترین صفحه‌ها تابید.</p>
+</section>
+<section class="para fade">
+  <h3>زینب، بانوی سرخ‌پوش مقاومت</h3>
+  <p>در میان اشک و شعله‌ی غم، زینب قامت افراشت و ویرانه‌های شام را سنگر حق ساخت.</p>
+  <span class="special">«ما رأیتُ الا جمیلا» — زینب(س) پس از کربلا</span>
+</section>
+<section class="para fade">
+  <h3>امام حسین؛ تجلی ایمان بی‌بازگشت</h3>
+  <p>امام حسین علیه‌السلام بی‌هیچ تردیدی راه را انتخاب کرد تا وصیت عشق را به نسل‌ها رساند.</p>
+</section>
+<section class="para fade">
+  <h3>یاران عاشورایی؛ سپاه دلیران حقیقت</h3>
+  <p>دلیرانی که مرگ را در آغوش گرفتند، به حیات معنوی جاودانه پیوستند؛ زندگی‌شان الگویی برای هر قلب آزاده.</p>
+</section>
+<section class="para fade">
+  <h3>تشنه‌ترین روز تاریخ</h3>
+  <p>کودکان و زنان کاروان حسین سپیده‌دم عاشورا را با عطش و امید دیدند؛ امیدی که دشمن نتوانست خاموش کند.</p>
+</section>
+<section class="para fade">
+  <h3>فریاد آزادی در عاشورا</h3>
+  <p>هر جا که سخن از آزادیست، نام حسین علیه‌السلام با حماسه کربلا تکرار می‌شود؛ عاشورا میعادگاه آزادگان است.</p>
+  <span class="special">«اگر دین ندارید، لااقل آزاده باشید.»</span>
+</section>
+<section class="para fade">
+  <h3>شکوه اشک‌های محرم</h3>
+  <p>اشک بر عاشورا نه نشانه ضعف، بلکه نماد معرفت، بصیرت و اتصال به سرچشمه حقیقت است.</p>
+</section>
+<section class="para fade">
+  <h3>خطابه زینبی؛ انفجار نور در شب ظلمت</h3>
+  <p>حضرت زینب سلام‌الله‌علیها با خطابه‌ای لرزاننده، شام را مقهور حقیقت حسین ساخت.</p>
+</section>
+<section class="para fade">
+  <h3>پیام کربلا، بیداری انسان</h3>
+  <p>عاشورا نه فقط برای یک قوم یا زمان، بلکه پیام بیداری وجدان بشر است؛ نوری بی‌انتها برای عصرها و نسل‌ها.</p>
+</section>
+<section class="para fade">
+  <h3>فانی شدن در راه عشق</h3>
+  <p>سرهای یاران حسین بر نیزه‌ها رفت اما عشقشان هرگز تسلیم نشد؛ به قول محتشم: «باز این چه شورش است...»</p>
+  <span class="special">«این حسین کیست که عالم همه دیوانه اوست...»</span>
+</section>
+<section class="para fade">
+  <h3>میثاق شجاعت در تاسوعا</h3>
+  <p>در شب تاسوعا، امام اجازه داد یاران بروند، اما هرکس ماند؛ میثاق شجاعت را نوشتند تا پایان دنیا.</p>
+</section>
+<section class="para fade">
+  <h3>عاشورا؛ روز عبرت و عزت</h3>
+  <p>پرده‌های عبرت در عاشورا فرو ریخت؛ عزت و غیرت جای ترس نشاند.</p>
+</section>
+<section class="para fade">
+  <h3>واقعه‌ای برای تمام نسل‌ها</h3>
+  <p>واقعه کربلا در ذهن تاریخ، ریشه دواند تا هر نسل بشری از آن درس و الهام گیرد.</p>
+</section>
+<section class="para fade">
+  <h3>قاب سوزان حریت</h3>
+  <p>نام حسین قاب جاودانی حریت است؛ هر کس به او می‌نگرد، بندهای خود را می‌گسلد.</p>
+</section>
+<section class="para fade">
+  <h3>حماسه‌ای بی‌غروب</h3>
+  <p>طلوع عاشورا غروب ندارد؛ تا ابد در افق معرفت و عشق، خورشید حسین می‌تابد.</p>
+  <span class="special">«لولاک لما خلقت الافلاک»</span>
+</section>
+<section class="para fade">
+  <h3>درس ایثار و همدلی</h3>
+  <p>امام حسین برای اصلاح امت و احیای همدلی قیام کرد؛ هر گامی که برداشت، آیین ایثار را رقم زد.</p>
+</section>
+<section class="para fade">
+  <h3>تاریخ سخن می‌گوید</h3>
+  <p>تاریخ عاشورا همواره سخن می‌گوید؛ هر ورقش شهادت، ایثار و نور است.</p>
+</section>
+<section class="para fade">
+  <h3>شعله‌های شعور حسینی</h3>
+  <p>عقل و عشق عاشورایی مانند دو بال، انسان را به اوج حقیقت پرواز می‌دهد.</p>
+</section>
+<section class="para fade">
+  <h3>ایستادگی در برابر ظلم</h3>
+  <p>امام حسین علیه‌السلام نشان داد که در هیچ شرایطی نباید ظلم را پذیرفت.</p>
+  <span class="special">«موت فی عزّ خیرٌ من حیاتٍ فی ذلّ»</span>
+</section>
+<section class="para fade">
+  <h3>آسمان کربلا بارانی از نور</h3>
+  <p>آسمان کربلا به جای باران خون، نور آزادگی بارید تا امروز یادگار بماند.</p>
+</section>
+<section class="para fade">
+  <h3>حسین، امام عاشقان</h3>
+  <p>حسین علیه‌السلام امام عاشقان است؛ هر قلب مؤمن با ذکر او آرام می‌گیرد و گرم می‌شود.</p>
+</section>
+<section class="para fade">
+  <h3>فراتر از جغرافیا</h3>
+  <p>عاشورا فقط یک واقعه جغرافیایی نیست؛ حقیقتی است که مرزها را درمی‌نوردد و جهانیان را به حیرت وا‌می‌دارد.</p>
+</section>
+<section class="para fade">
+  <h3>کربلا؛ مدرسه انسانیت</h3>
+  <p>درس‌های کربلا برای همه روزها و همه انسان‌هاست: عدالت، معرفت، و وفاداری.</p>
+  <span class="special">«عاشورا زنده است تا انسان زنده است.»</span>
+</section>
+
+<section class="para fade">
+  <h3>میراث بی‌پایان عاشورا</h3>
+  <p>پیام عاشورا تا ابد در ذهن بشریت می‌ماند؛ نوری که هرگز خاموش نمی‌شود.</p>
+</section>
+<div class="footer" role="contentinfo">
+  یا لیتنا کنا معکم <br><span style="font-size:16px;color:#c31a1a;">ای کاش در رکاب حسین بودیم</span>
+</div>
+    </article>
+  </main>
+<script>
+/* افکت fade-in */
+document.addEventListener('DOMContentLoaded', function(){
+  const boxes = document.querySelectorAll('.fade');
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach(ent => {
+      if(ent.isIntersecting){
+        ent.target.classList.add('visible');
+        obs.unobserve(ent.target);
+      }
+    });
+  }, {threshold: 0.08});
+  boxes.forEach(b => io.observe(b));
+});
+</script>
+</body>
+</html>
